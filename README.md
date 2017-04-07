@@ -8,12 +8,15 @@ This is my first program I've written using Golang. I compiled, ran, and tested 
 Assuming you are in a directory named `ip-geo-lookup` and the file `ip-geo-lookup.go` is placed in that directory, simply enter:
 ```
 home/.../ip-geo-lookup$go build
+```
+Which will produce the executable binary file.
+Now, enter the following command to run the program:
+```
 home/.../ip-geo-lookup$./ip-geo-lookup [ip address]
 ```
 The information is returned in the format:
 
 **[CountryCode], [CountryName], [RegionCode], [RegionName], [City], [ZipCode], [TimeZone], [Latitude],[Longitude],[MetroCode]**
-
 
 Any valid IP address (ipv4 and ipv6) can be used as input. Here are some sample usage cases:
 ```
