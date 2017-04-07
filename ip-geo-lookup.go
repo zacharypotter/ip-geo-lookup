@@ -25,7 +25,7 @@ func main() {
   // Create struct to store geographic info about ip address
   type InfoIP struct {
     IP, Country_Code, Country_Name, Region_Code, Region_Name, City, Zip_Code, Time_Zone string
-    Latitude, Longitude, MetroCode float64
+    Latitude, Longitude, Metro_Code float64
   }
 
   // Send http Get request
@@ -51,6 +51,6 @@ func main() {
   // Print the result
   fmt.Printf("Address information for %v:\n%v, %v, %v, %v, %v, %v, %v, %v,%v,%v\n",
   info.IP, info.Country_Code, info.Country_Name, info.Region_Code, info.Region_Name,
-  info.City, info.Zip_Code, info.Time_Zone, info.Latitude, info.Longitude, info.MetroCode)
+  info.City, info.Zip_Code, info.Time_Zone, info.Latitude, info.Longitude, info.Metro_Code)
 }
 
